@@ -1,0 +1,32 @@
+{
+  "login_001":
+              { "url": "http://quick.testpub.cn/api/v1/login/",
+                "username": "admin",
+                "password": "admin123456",
+                "expect_result": "True",
+                "status_code": 200},
+  "login_002":
+              { "url": "http://quick.testpub.cn/api/v1/login/",
+                "username": "admin",
+                "password": "admin12345",
+                "expect_result": "False",
+                "status_code": 200},
+  "login_003":
+              { "url": "http://quick.testpub.cn/api/v1/login/",
+                "username":"",
+                "password":"admin123456",
+                "expect_result": "False",
+                "status_code": 200},
+  "login_004":
+              { "url": "http://quick.testpub.cn/api/v1/login/",
+                "username":"admin",
+                "passwoed":"abcd123",
+                "expect_result": "False",
+                "status_code": 200},
+  "login_005":
+              { "url": "http://quick.testpub.cn/api/v1/login/",
+                "username":"admin",
+                "password":"",
+                "expect_result": "False",
+                "status_code": 200}
+}

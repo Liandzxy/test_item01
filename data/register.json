@@ -1,0 +1,30 @@
+{
+  "register_001": {
+                      "url": "http://quick.testpub.cn/api/v1/register/",
+                      "username" : "abvi",
+                      "password1" : "123",
+                      "password2" : "123",
+                      "expect_result": "True",
+                      "status_code": 200},
+  "register_002": {
+                      "url": "http://quick.testpub.cn/api/v1/register/",
+                      "username" : "agegh",
+                      "password1" : "123",
+                      "password2" : "124",
+                      "expect_result": "False",
+                      "status_code": 200},
+  "register_003": {
+                      "url": "http://quick.testpub.cn/api/v1/register/",
+                      "username" : "",
+                      "password1" : "123",
+                      "password2" : "124",
+                      "expect_result": "False",
+                      "status_code": 200},
+  "register_004": {
+                      "url": "http://quick.testpub.cn/api/v1/register/",
+                      "username" : "admin",
+                      "password1" : "123",
+                      "password2" : "123",
+                      "expect_result": "Server Error (500)",
+                      "status_code": 500}
+}
