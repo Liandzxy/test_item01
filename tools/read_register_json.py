@@ -4,7 +4,7 @@ import json
 
 class ReadJson(object):
     def __init__(self, filename):
-        self.filepath = "../data/" + filename
+        self.filepath = "./data/" + filename
 
     def read_json(self):
         # 打开json文件获取内容
